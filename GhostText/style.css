@@ -1,0 +1,38 @@
+body{
+margin:0;
+padding:0;
+font-family: verdana;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background white;
+
+}
+ul{
+    margin:0;
+    padding: 0;
+    display:flex;
+
+}
+ul li{
+    list-style: none;
+    color : blue ;
+    font-size:6em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    filter:blur(1px);
+    transition: 4s;
+
+}
+ul li:hover,
+ul li:hover ~ li
+
+{
+    transform:rotate(100deg) translateY(-200px);
+    transition:2s;
+    filter:blur(20px);
+    opacity:0;
+    cursor: pointer;
+
+}
