@@ -1,0 +1,99 @@
+ body
+{
+    background: #e8e4e1;
+}
+.wrapper
+{
+    display: inline-block;
+    background: #e8e4e1;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -120px;
+    margin-left: -180px;
+}
+.flip-container
+{
+    display: inline-block;
+    perspective: 1000px;
+    vertical-align: top;
+}
+.wrapper:hover .flip-left
+{
+    transform: rotateY(-180deg);
+}
+.wrapper:hover .flip-right
+{
+    transform: rotateY(180deg);
+}
+.flip-container, .front, .back
+{
+    width: 180px;
+    height: 350px;
+}
+.flip
+{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back
+{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front
+{
+    z-index: 2;
+    background: yellow;
+    transform: rotateY(0deg);
+    overflow: hidden;
+}
+.front-left .circle
+{
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+.front-right .circle
+{
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+.circle
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: black;
+    box-shadow: 10 19px 10px rgba(0,0,0,.20), 0 15px 12px rgba(0,0,0,.12);
+}
+.back
+{
+    background: rgb(220,220,220);
+    transform: rotateY(180deg);
+    overflow: hidden;;
+}
+img
+{
+    width: 360px;
+    height: 350px;
+}
+.back-left img
+{
+    position: absolute;
+    left: 0;
+}
+.back-right img
+{
+    position: absolute;
+    right: 0;
+}
+
