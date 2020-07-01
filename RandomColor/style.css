@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+span{
+
+    color:#fff;
+    display: block;
+    font-size: 50px;
+    font-family: Verdana;
+    margin-bottom: 20px;
+    text-shadow: 0 5px 10px #000;
+
+}
+
+.color{
+    padding: 16px 32px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    border:2px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 10px 15px #000;
+}
